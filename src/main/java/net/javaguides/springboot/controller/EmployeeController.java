@@ -1,5 +1,5 @@
 package net.javaguides.springboot.controller;
-
+//this is the change
 import java.util.List;
 //i want this to stay
 import org.springframework.http.HttpStatus;
@@ -28,10 +28,7 @@ public class EmployeeController {
 	}
 	
 	// build create employee REST API
-	@PostMapping()
-	public ResponseEntity<Employee> saveEmployee(@RequestBody Employee employee){
-		return new ResponseEntity<Employee>(employeeService.saveEmployee(employee), HttpStatus.CREATED);
-	}
+	
 	
 	// build get all employees REST API
 	@GetMapping
